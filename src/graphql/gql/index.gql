@@ -1,0 +1,25 @@
+query pagePeachOutOrderTransferDetail($input: PageOrderTransferDetailInput) {
+  pagePeachOutOrderTransferDetail(input: $input) {
+    pageCurrent
+    pageSize
+    records {
+      amount
+      billStatus
+      billStatusDesc
+      flowCode
+      flowTime
+      itemId
+      orderCode
+      originalBatchCode
+      quantityDesc
+      remark
+      skuName
+      sourceBelongOrg
+      targetBelongOrg
+      unitPrice
+      userName
+      warehouse
+    }
+    totalRecords
+  }
+}
